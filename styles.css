@@ -33,6 +33,11 @@ main {
     row-gap: 3rem;
 }
 
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
 .heading {
     grid-column: 2 / 3;
     display: grid;
@@ -42,4 +47,40 @@ main {
 
 .text {
     grid-column: 2 / 3;
+}
+
+.hero {
+    position: relative;
+    grid-column: 1 / -1;
+}
+
+.hero-title {
+    color: orangered;
+    font-size: 8rem;
+    text-align: center;
+}
+
+.hero-subtitle {
+    color: orangered;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.author {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+}
+
+.author-name a:hover {
+    background-color: #306203;
+}
+
+.publish-date {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 3rem;
 }
